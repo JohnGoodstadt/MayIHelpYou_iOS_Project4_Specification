@@ -21,14 +21,13 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 	func application(_ application: UIApplication,
 					 didReceiveRemoteNotification notification: [AnyHashable : Any],
 					 fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-		printhires("didReceiveRemoteNotification")
+
 		print(notification)
 		//needed for PhoneNumber Auth
 		if Auth.auth().canHandleNotification(notification) {
 			completionHandler(.noData)
 			return
 		}
-		// This notification is not auth related; it should be handled separately.
 
 	}
 }
@@ -70,7 +69,6 @@ struct MayIHelpYouApp: App {
 						}else{
 							printhires("TabContentView.onAppear().GIDSignIn GOOD \(user?.userID ?? "unknown user")")
 						}
-						// Check if `user` exists; otherwise, do something with `error`
 					}
 				}
 			
