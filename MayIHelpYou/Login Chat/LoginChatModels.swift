@@ -109,7 +109,7 @@ extension LoginChat {
 //				  LoginMessage("Tap on an already setup login:",bucketType: .preamble),
 //				 
 //				  //disable for demo's. use account panel to login with these.
-				  LoginMessage("indapoint@gmail.com",rowType:.loginIndaPoint, bucketType: .preamble, isButton:  .normal),
+				 // LoginMessage("indapoint@gmail.com",rowType:.loginIndaPoint, bucketType: .preamble, isButton:  .normal),
 //				  LoginMessage("testing@gmail.com",rowType:.loginTesting, bucketType: .preamble, isButton:  .normal),
 //				  
 				  
